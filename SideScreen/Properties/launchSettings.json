@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SideScreen (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SideScreen (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

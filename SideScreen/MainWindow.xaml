@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="SideScreen.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SideScreen"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:ui="using:CommunityToolkit.WinUI"
+				xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+
+    mc:Ignorable="d"
+				Title="SideScreen Settings">
+
+				<Window.SystemBackdrop>
+								<MicaBackdrop />
+				</Window.SystemBackdrop>
+
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+								<controls:Segmented>
+												<controls:SegmentedItem Content="Share" 
+																																				Icon="{ui:FontIcon Glyph=&#xE72D;}" />
+												<controls:SegmentedItem Content="Receive" 
+																								Icon="{ui:FontIcon Glyph=&#xE7F4;}" />
+								</controls:Segmented>
+								<Image x:Name="screenImage" />
+				</StackPanel>
+</Window>
